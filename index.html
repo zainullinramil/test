@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Горная кофейня: кофе, выпечка, панорамный вид. Меню, маршрут, контакты." />
+    <title>Горная кофейня</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="На верх страницы">
+          <span class="brand__mark" aria-hidden="true">⛰︎</span>
+          <span class="brand__name">Горная кофейня</span>
+        </a>
+
+        <nav class="nav" aria-label="Навигация по странице">
+          <a class="nav__link" href="#about">О нас</a>
+          <a class="nav__link" href="#menu">Меню</a>
+          <a class="nav__link" href="#route">Как добраться</a>
+          <a class="nav__link" href="#contacts">Контакты</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false">
+          Тема
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__kicker">Кофе с видом на вершины</p>
+            <h1 class="hero__title" id="heroTitle">Тёплая остановка в горах</h1>
+            <p class="hero__subtitle">
+              Эспрессо, фильтр и домашняя выпечка. Заходите погреться у камина или берите кофе с собой — на
+              тропу.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#menu">Посмотреть меню</a>
+              <a
+                class="btn btn--ghost"
+                href="https://www.google.com/maps"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Проложить маршрут
+              </a>
+            </div>
+            <ul class="hero__meta" aria-label="Коротко о нас">
+              <li>Панорамные окна</li>
+              <li>Пледы и камин</li>
+              <li>Можно с собой</li>
+            </ul>
+          </div>
+
+          <div class="hero__card" aria-label="Информация">
+            <div class="info-card">
+              <div class="info-card__row">
+                <span class="info-card__label">Сегодня</span>
+                <span class="info-card__value" id="todayHours">09:00–18:00</span>
+              </div>
+              <div class="info-card__row">
+                <span class="info-card__label">Адрес</span>
+                <span class="info-card__value">Тропа к перевалу, у смотровой</span>
+              </div>
+              <div class="info-card__row">
+                <span class="info-card__label">Связь</span>
+                <a class="info-card__link" href="tel:+70000000000">+7 (000) 000‑00‑00</a>
+              </div>
+              <p class="info-card__note">
+                ponytail: карта и контакты — заглушки. Замените адрес/телефон/ссылки на реальные.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="aboutTitle">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="aboutTitle">О нас</h2>
+            <p class="section__lead">
+              Небольшая кофейня на высоте, где можно выдохнуть, согреться и посмотреть на горы без спешки.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card__title">Что внутри</h3>
+              <ul class="list">
+                <li>Зёрна свежей обжарки и понятное меню</li>
+                <li>Пледы, тёплый свет и тихая музыка</li>
+                <li>Пара розеток и стойка у окна</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 class="card__title">Для кого</h3>
+              <ul class="list">
+                <li>Туристы и райдеры — перед подъёмом и после спуска</li>
+                <li>Местные — за чашкой фильтра и разговором</li>
+                <li>Одиночки — за видом и тишиной</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="gallery" aria-label="Фотогалерея (плейсхолдер)">
+            <div class="gallery__item gallery__item--a">Интерьер</div>
+            <div class="gallery__item gallery__item--b">Вид из окна</div>
+            <div class="gallery__item gallery__item--c">Бариста</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="menu" aria-labelledby="menuTitle">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="menuTitle">Меню</h2>
+            <p class="section__lead">Коротко и по делу. Цены — примерные, можно заменить на реальные.</p>
+          </header>
+
+          <div class="grid-3">
+            <article class="menu-card" aria-label="Кофе">
+              <h3 class="menu-card__title">Кофе</h3>
+              <ul class="menu">
+                <li class="menu__row"><span>Эспрессо</span><span>от 180 ₽</span></li>
+                <li class="menu__row"><span>Американо</span><span>от 220 ₽</span></li>
+                <li class="menu__row"><span>Капучино</span><span>от 260 ₽</span></li>
+                <li class="menu__row"><span>Латте</span><span>от 280 ₽</span></li>
+                <li class="menu__row"><span>Фильтр</span><span>от 240 ₽</span></li>
+                <li class="menu__row"><span>Альтернатива</span><span>от 320 ₽</span></li>
+              </ul>
+              <p class="menu-card__hint">Можно в термос или стакан с собой.</p>
+            </article>
+
+            <article class="menu-card" aria-label="Выпечка и десерты">
+              <h3 class="menu-card__title">Выпечка</h3>
+              <ul class="menu">
+                <li class="menu__row"><span>Круассан</span><span>от 190 ₽</span></li>
+                <li class="menu__row"><span>Штрудель</span><span>от 240 ₽</span></li>
+                <li class="menu__row"><span>Сырник</span><span>от 210 ₽</span></li>
+                <li class="menu__row"><span>Чизкейк</span><span>от 290 ₽</span></li>
+                <li class="menu__row"><span>Пирог дня</span><span>от 230 ₽</span></li>
+              </ul>
+              <p class="menu-card__hint">Часть позиций может меняться по сезону.</p>
+            </article>
+
+            <article class="menu-card" aria-label="Напитки без кофе">
+              <h3 class="menu-card__title">Без кофе</h3>
+              <ul class="menu">
+                <li class="menu__row"><span>Какао</span><span>от 260 ₽</span></li>
+                <li class="menu__row"><span>Чай</span><span>от 200 ₽</span></li>
+                <li class="menu__row"><span>Имбирный</span><span>от 240 ₽</span></li>
+                <li class="menu__row"><span>Ягодный морс</span><span>от 180 ₽</span></li>
+                <li class="menu__row"><span>Безалк. глинтвейн</span><span>от 300 ₽</span></li>
+              </ul>
+              <p class="menu-card__hint">Согревает после ветра и подъёма.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="route" aria-labelledby="routeTitle">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="routeTitle">Как добраться</h2>
+            <p class="section__lead">
+              От парковки у подъёмника — 12 минут пешком по тропе. В снегопад лучше идти в ботинках с
+              протектором.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <div class="card">
+              <h3 class="card__title">Ориентиры</h3>
+              <ul class="list">
+                <li>Верхняя станция подъёмника → налево к смотровой</li>
+                <li>После указателя «Перевал» — 200 метров по настилу</li>
+                <li>Вход с террасой и деревянной вывеской</li>
+              </ul>
+              <div class="actions">
+                <a
+                  class="btn btn--primary"
+                  href="https://www.google.com/maps"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Открыть в картах
+                </a>
+                <a class="btn btn--ghost" href="#contacts">Связаться</a>
+              </div>
+            </div>
+
+            <div class="map" role="group" aria-label="Карта (плейсхолдер)">
+              <div class="map__placeholder">
+                <p class="map__title">Карта</p>
+                <p class="map__text">
+                  ponytail: для простоты без встраивания iframe. Вставьте сюда embed‑код Google/Яндекс карт,
+                  если нужно.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="contacts" aria-labelledby="contactsTitle">
+        <div class="container">
+          <header class="section__header">
+            <h2 class="section__title" id="contactsTitle">Контакты</h2>
+            <p class="section__lead">Напишите заранее в выходные — бывает очередь на столик у окна.</p>
+          </header>
+
+          <div class="grid-3">
+            <div class="card">
+              <h3 class="card__title">Часы работы</h3>
+              <dl class="dl">
+                <div class="dl__row"><dt>Будни</dt><dd>09:00–18:00</dd></div>
+                <div class="dl__row"><dt>Выходные</dt><dd>08:30–19:00</dd></div>
+                <div class="dl__row"><dt>Сезон</dt><dd>зима/лето могут отличаться</dd></div>
+              </dl>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Связь</h3>
+              <ul class="list">
+                <li><a href="tel:+70000000000">+7 (000) 000‑00‑00</a></li>
+                <li><a href="mailto:hello@example.com">hello@example.com</a></li>
+                <li><a href="#" aria-label="Телеграм (заглушка)">Telegram</a></li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Соцсети</h3>
+              <ul class="list">
+                <li><a href="#" aria-label="ВКонтакте (заглушка)">VK</a></li>
+                <li><a href="#" aria-label="Instagram (заглушка)">Instagram*</a></li>
+                <li><a href="#" aria-label="Карты (заглушка)">Мы на карте</a></li>
+              </ul>
+              <p class="small">
+                *если используете. Замените ссылками на реальные страницы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">© <span id="year"></span> Горная кофейня</p>
+        <a class="footer__link" href="#top">Наверх</a>
+      </div>
+    </footer>
+
+    <button class="to-top" type="button" id="toTop" aria-label="Наверх">
+      ↑
+    </button>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
